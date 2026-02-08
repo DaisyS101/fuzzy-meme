@@ -1,0 +1,117 @@
+/* styles.css — minimal styles for fuzzy-meme (safe, non-destructive) */
+:root{
+  --bg: #afcbff;
+  --accent: #a4dbff;
+  --text: #222222;
+}
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+}
+.main{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+h1{
+  color:var(--accent);
+  font-size:2rem;
+  text-align:center;
+}
+/* Borders and subtle accents (non-destructive to HTML boilerplate) */
+.image-gallery img{
+  border: 4px solid rgba(106,90,205,0.12);
+  border-radius:8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.image-gallery img:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+header{
+  display:block;
+  border-bottom: 2px solid rgba(34,34,34,0.06);
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.5rem;
+}
+h2,h3,h4{
+  border-left: 3px solid rgba(106,90,205,0.08);
+  padding-left: 0.6rem;
+  margin-left: 0;
+}
+
+/* Add more page-specific rules here without altering HTML boilerplate */
+
+/* Dimension (depth) enhancements - non-destructive */
+:root{
+  --elevation-1: 0 6px 18px rgba(0,0,0,0.06);
+  --elevation-2: 0 12px 36px rgba(0,0,0,0.10);
+  --back-plate: linear-gradient(180deg, rgba(106,90,205,0.03), rgba(0,0,0,0.01));
+}
+
+body{
+  background-image: var(--back-plate);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.image-gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  justify-content:center;
+  perspective: 900px; /* allows 3D tilt on children */
+  padding: 1rem;
+}
+
+.image-gallery img{
+  will-change: transform, box-shadow;
+  transform-origin: center;
+}
+
+.image-gallery img:active{
+  transform: translateY(-2px) scale(0.995);
+}
+
+/* Create floating card effect for header and content using pseudo-layer */
+header{
+  position:relative;
+  background: rgba(18, 55, 156, 0.6);
+  backdrop-filter: blur(4px);
+}
+header::before{
+  content:"";
+  position:absolute;
+  left:10px;
+  right:20px;
+  top:8px;
+  bottom:-6px;
+  z-index:-1;
+  border-radius:6px;
+  box-shadow: var(--elevation-1);
+  background: linear-gradient(180deg, rgba(30, 131, 156, 0.514), rgba(54, 68, 150, 0.8));
+}
+
+/* Slightly lift headings for dimension */
+h2,h3,h4{
+  background: rgba(8, 21, 199, 0.493);
+  display:inline-block;
+  border-radius:4px;
+  box-shadow: var(--elevation-1);
+}
+
+/* Subtle 3D hover tilt for images */
+.image-gallery img:hover{
+  transform: translateY(-8px) rotateX(6deg) scale(1.02);
+}
+
+/* Respect existing inline body background color if present by using semi-transparent overlays */
+.image-gallery img{
+  border-color: rgba(7, 43, 204, 0.753);
+}

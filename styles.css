@@ -86,6 +86,7 @@ header{
   position:relative;
   background: rgba(18, 55, 156, 0.6);
   backdrop-filter: blur(4px);
+  font-size: 1.3rem;
 }
 header::before{
   content:"";
@@ -120,3 +121,23 @@ h3{
 .image-gallery img{
   border-color: rgba(7, 43, 204, 0.753);
 }
+
+.image-gallery p{
+  float: left;
+  clear: left;
+  visibility: visible;
+}
+
+header em{
+  font-style: italic;
+}
+
+h2 strong{
+  font-weight: bold;
+}
+
+h3 em{
+  font-style: italic;
+}
+
+

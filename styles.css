@@ -1,8 +1,10 @@
 /* styles.css*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 :root{
   --bg: #afcbff;
   --accent: #a4dbff;
-  --text: #222222;
+  --text: #090a47d0;
 }
 html,body{
   height:100%;
@@ -106,6 +108,9 @@ h2,h3,h4{
   box-shadow: var(--elevation-1);
 }
 
+h3{
+  font-family: 'Playfair Display', serif;
+}
 
 .image-gallery img:hover{
   transform: translateY(-8px) rotateX(6deg) scale(1.02);

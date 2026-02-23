@@ -141,4 +141,34 @@ h3 em{
   font-style: italic;
 }
 
+/*puting a break here out of pure fear that something will break and can simply delete the code below without panicking of breaking something*/
 
+
+
+
+table {
+    width: 100%; /* Or a fixed width like 600px */
+    border-collapse: collapse; /* Removes space between borders */
+    margin: 20px 0; /* Adds space around the table */
+    font-family: Arial, sans-serif; /* Sets font */
+}
+
+th, td {
+    border: 1px solid #0a4b81; /* Adds borders to cells */
+    padding: 8px 12px; /* Adds space inside cells */
+    text-align: left; /* Aligns text */
+}
+
+th {
+    background-color: #109276; 
+    font-weight: bold; /* Makes headers bold */
+    color: #333; /* Dark text color */
+}
+
+tr:nth-child(even) {
+    background-color: #1e6586; /* Alternating row colors for readability */
+}
+
+tr:hover {
+    background-color: #001068; /* Highlight row on hover */
+}

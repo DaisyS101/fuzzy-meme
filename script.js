@@ -17,7 +17,3 @@ document.addEventListener('DOMContentLoaded', () => {
     catImage.addEventListener('click', toggleCatImage);
 });
 
-function greetUser() {
-    const userName = prompt("Please enter your name:"); // Prompts the user for their name
-    alert("Hello, " + userName + "!"); // Displays an alert message
-}

@@ -178,11 +178,7 @@ tr:hover {
 
 
 
-ul.todo-list {
-  list-style-type: square; /* Uses square bullets */
-}
-
-ol.alpha-list li {
-  list-style-type: lower-alpha; /* Uses lowercase letters */
-  line-height: 3.5; /* Adds spacing */
+list {
+    list-style-type: square; /* Changes bullet points to squares */
+    padding-left: 20px; /* Adds space before the list */
 }

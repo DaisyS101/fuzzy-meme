@@ -170,5 +170,5 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #001068; /* Highlight row on hover */
+    background-color: #4fe0b5; /* Highlight row on hover */
 }

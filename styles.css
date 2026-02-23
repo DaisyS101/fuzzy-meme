@@ -172,3 +172,17 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #4fe0b5; /* Highlight row on hover */
 }
+
+
+
+
+
+
+ul.todo-list {
+  list-style-type: square; /* Uses square bullets */
+}
+
+ol.alpha-list li {
+  list-style-type: lower-alpha; /* Uses lowercase letters */
+  line-height: 3.5; /* Adds spacing */
+}

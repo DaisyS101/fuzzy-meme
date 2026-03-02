@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
-ctx.fillStyle = "royalblue"; // Blue is a better color to be honest but hey thats me
+ctx.fillStyle = "lightgreen"; // used a different color becaause i kept using blues too often
 ctx.fillRect(0, 0, 150, 75); // Draw a filled rectangle (x, y, width, height) will this work? whos to say!
 

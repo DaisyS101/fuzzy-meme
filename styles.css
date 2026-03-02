@@ -193,16 +193,16 @@ list {
 
 body {
     font-family: sans-serif; /* Use a readable font */
-    background-color: #6161c5; /* Light background */
+    background-color: #7171f3; /* Light background */
     display: flex;
     justify-content: center; /* Center the form horizontally */
     align-items: center; /* Center the form vertically */
-    min-height: 5vh; /* Full viewport height */
+    min-height: 2vh; /* Full viewport height */
     margin: 0;
 }
 
 form {
-    background-color: #ffffff;
+    background-color: #7d89f5;
     padding: 2em;
     border: 1px solid #ccc;
     border-radius: 1em; /* Rounded corners */

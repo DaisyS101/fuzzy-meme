@@ -193,7 +193,7 @@ list {
 
 body {
     font-family: sans-serif; /* Use a readable font */
-    background-color: #f4f4f9; /* Light background */
+    background-color: #6161c5; /* Light background */
     display: flex;
     justify-content: center; /* Center the form horizontally */
     align-items: center; /* Center the form vertically */
@@ -207,8 +207,8 @@ form {
     border: 1px solid #ccc;
     border-radius: 1em; /* Rounded corners */
     width: 100%;
-    max-width: 300px; /* Limit form width on large screens */
-    box-sizing: border-box; /* Ensures padding/border don't add to width */
+    max-width: 300px; 
+    box-sizing: border-box; 
 }
 
 .form-group {

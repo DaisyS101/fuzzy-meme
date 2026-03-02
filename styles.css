@@ -182,3 +182,73 @@ list {
     list-style-type: square; /* Changes bullet points to squares */
     padding-left: 20px; /* Adds space before the list */
 }
+
+
+
+/* below is for styling the dang form! */
+
+
+
+
+
+body {
+    font-family: sans-serif; /* Use a readable font */
+    background-color: #f4f4f9; /* Light background */
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    min-height: 5vh; /* Full viewport height */
+    margin: 0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-radius: 1em; /* Rounded corners */
+    width: 100%;
+    max-width: 300px; /* Limit form width on large screens */
+    box-sizing: border-box; /* Ensures padding/border don't add to width */
+}
+
+.form-group {
+    margin-bottom: 1em; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels appear on their own line */
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box; /* Match form field borders */
+    border: 1px solid #999;
+    border-radius: 0.3em;
+}
+
+input:focus, textarea:focus {
+    outline-color: dodgerblue; /* Highlight active elements */
+}
+
+.button-group {
+    margin-top: 1em;
+}
+
+button {
+    padding: 0.7em 1.5em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #007bb5; /* Darker color on hover */
+}

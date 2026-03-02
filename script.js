@@ -17,3 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
     catImage.addEventListener('click', toggleCatImage);
 });
 
+

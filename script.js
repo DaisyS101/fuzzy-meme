@@ -26,3 +26,16 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle = "lightgreen"; // used a different color becaause i kept using blues too often
 ctx.fillRect(0, 0, 150, 75); // Draw a filled rectangle (x, y, width, height) will this work? whos to say!
 
+
+
+
+
+// adding a break here just in case where something is. below is for jQuery. this is to remind myself in case i forget after spring break and coding can be stressful.
+
+
+$('#test').draggable({
+    start: function(event, ui) {
+        console.log(event); // The original browser event
+        console.log(ui);    // The jQuery UI specific object
+    }
+});

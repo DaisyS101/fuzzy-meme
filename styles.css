@@ -7,7 +7,7 @@
   --text: #090a47d0;
 }
 html,body{
-  height:100%;
+  height:300%;
   margin:0;
   padding:0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
@@ -19,6 +19,7 @@ html,body{
   align-items:center;
   justify-content:center;
   min-height:100vh;
+  min-width: 300vw;
 }
 h1{
   color:var(--accent);
@@ -26,23 +27,32 @@ h1{
   text-align:center;
 }
 
+
+
+
  */.image-gallery img{
   border: 4px solid rgba(106,90,205,0.12);
   border-radius:8px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   transition: transform .15s ease, box-shadow .15s ease;
 }
+
+
+
+
+
 .image-gallery img:hover{
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0,0,0,0.12);
 }
-header{
+header{ text-align: center;
   display:block;
   border-bottom: 2px solid rgba(34,34,34,0.06);
   padding: 0.6rem 1rem;
   margin-bottom: 0.5rem;
 }
 h2,h3,h4{
+
   border-left: 3px solid rgba(106,90,205,0.08);
   padding-left: 0.6rem;
   margin-left: 0;
@@ -192,13 +202,10 @@ list {
 
 
 body {
-    font-family: sans-serif; /* Use a readable font */
-    background-color: #7171f3; /* Light background */
-    display: flex;
-    justify-content: center; /* Center the form horizontally */
-    align-items: center; /* Center the form vertically */
-    min-height: 2vh; /* Full viewport height */
-    margin: 0;
+  font-family: sans-serif; /* Use a readable font */
+  background-color: #7171f3; /* Light background */
+  margin: 0;
+  min-height: 100vh;
 }
 
 form {
@@ -240,7 +247,7 @@ input:focus, textarea:focus {
 
 button {
     padding: 0.7em 1.5em;
-    background-color: dodgerblue;
+    background-color: rgb(45, 98, 151);
     color: white;
     border: none;
     border-radius: 0.3em;

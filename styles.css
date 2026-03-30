@@ -259,3 +259,95 @@ button {
 button:hover {
     background-color: #007bb5; /* Darker color on hover */
 }
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout (mobile-first) */
+/* Base: Mobile - single column flows, touch-friendly sizes */
+.image-gallery {
+  gap: 8px;
+  padding: 0.75rem;
+}
+.image-gallery img {
+  max-width: 48%; /* two images per row on small screens */
+  height: auto;
+  display: inline-block;
+}
+
+/* Center the form on small screens */
+form {
+  margin: 0.75rem auto;
+}
+
+.container {
+  padding: 0.5rem;
+}
+.container div {
+  flex: 0 0 100%; /* full width items on mobile */
+  box-sizing: border-box;
+}
+
+/* Make table more readable on small screens */
+table {
+  font-size: 0.95rem;
+}
+
+/* Tablet and small laptops */
+@media (min-width: 600px) {
+  .image-gallery img {
+    max-width: 30%; /* three images per row on tablet */
+  }
+
+  .container div {
+    flex: 0 0 calc(50% - 20px); /* two columns */
+  }
+
+  form {
+    max-width: 480px;
+  }
+
+  header {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Desktop / Laptop */
+@media (min-width: 1024px) {
+  .image-gallery {
+    gap: 16px;
+  }
+
+  .image-gallery img {
+    max-width: 220px; /* fixed-ish thumbnails on larger screens */
+  }
+
+  .container {
+    padding: 1rem 2rem;
+  }
+
+  .container div {
+    flex: 0 0 calc(25% - 20px); /* four columns */
+  }
+
+  .main{
+    min-width: 100%; /* prevent horizontal overflow on large screens */
+  }
+
+  table {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Utility: ensure images never overflow their containers */
+img { max-width: 100%; height: auto; }
+
